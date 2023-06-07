@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="teste">teste mudança</h1>
+    <div>
+        <button onclick="inserir()">GetALL</button>
+    </div>
+    <button type="button" onclick="thread()", style="margin-top: 20px">teste thread</button>
+    <h1>Login</h1>
+
+    <form style = "margin-top: 10px;">
+        <input type="text" id="txtUserLogin" placeholder="" autofocus>
+        <label for="txtUserLogin">User</label>
+        <input type="password" id="txtSenhaLogin" placeholder="">
+        <label for="txtSenhaLogin">Senha</label>
+        <button type="button" onclick="login()">Entrar</button>
+    </form>
+
+    <h1>Cadastro</h1>
+
+    <form style = "margin-top: 10px;">
+        <input type="text" id="txtNomeCadastro" placeholder="" autofocus>
+        <label for="txtNomeCadastro">Nome</label>
+        <input type="email" id="txtEmailCadastro" placeholder="">
+        <label for="txtEmailCadastro">Email</label>
+        <input type="text" id="txtUserCadastro" placeholder="">
+        <label for="txtUserCadastro">User</label>
+        <input type="password" id="txtSenhaCadastro" placeholder="">
+        <label for="txtSenhaCadastro">Senha</label>
+        <input type="password" id="txtConfirmarSenhaCadastro" placeholder="">
+        <label for="txtConfirmarSenhaCadastro">Confirmar Senha</label>
+        <button type="button" onclick="cadastrar()">Cadastrar</button>
+    </form>
+
+    <h1>Atualizar Senha</h1>
+
+    <form style = "margin-top: 10px;">
+        <input type="text" id="txtSenhaAtualAtt" placeholder="" autofocus>
+        <label for="txtSenhaAtualAtt">Senha atual</label>
+        <input type="email" id="txtSenhaNovaAtt" placeholder="">
+        <label for="txtSenhaNovaAtt">Nova Senha</label>
+        <input type="text" id="txtConfirmaSenhaNovaAtt" placeholder="">
+        <label for="txtConfirmaSenhaNovaAtt">Confirme a Nova Senha</label>
+        <button type="button" onclick="atualizarSenha()">Atualizar Senha</button>
+    </form>
+
+    <h1>Excluir conta</h1>
+
+    <form style = "margin-top: 10px;">
+        <input type="text" id="txtSenhaExcluirConta" placeholder="" autofocus>
+        <label for="txtSenhaExcluirConta">Senha</label>
+        <button type="button" onclick="excluirConta()">Excluir conta</button>
+    </form>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

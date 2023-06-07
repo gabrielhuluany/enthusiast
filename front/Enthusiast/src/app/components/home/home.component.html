@@ -1,0 +1,452 @@
+<main class="flex-fill">
+    <div class="container">
+        <hr class="mt-5">
+        <hr class="mt-3">
+        <hr class="mt-3">
+
+        <div id="carouselMain" class="carousel slide carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" title="1"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" title="2"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" title="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="assets/img/slides/slide01.png" class="d-none d-md-block w-100" alt="">
+                    <img src="assets/img/slides/slide01small.png" class="d-block d-md-none w-100" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/img/slides/slide02.png" class="d-none d-md-block w-100" alt="">
+                    <img src="assets/img/slides/slide02small.png" class="d-block d-md-none w-100" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/img/slides/slide03.png" class="d-none d-md-block w-100" alt="">
+                    <img src="assets/img/slides/slide03small.png" class="d-block d-md-none w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <hr class="mt-3">
+
+        <a onclick="receberProdutos() ; preencherProdutos()" id="auto_trigger"></a>
+
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <h4 class="flex-grow-1 text-white"><i class="bi-stars text-primary"></i>Destaques</h4>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-1">
+
+        <div class="row g-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="" alt="" class="card-img-top" id="img_prod01">
+                    <div class="card-header" id="preco_prod01"></div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l" id="nome_prod01"></h5>
+                        <p class="card-text truncar-3l" id="desc_prod01"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success" id="quant_prod01"></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto02.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 22.999,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Placa de Vídeo NVIDIA GeForce RTX 4090 Gigabyte AORUS XTREME WATERFORCE 24GB GDDR6X</h5>
+                        <p class="card-text truncar-3l">
+                            Refrigeração extrema para maior performance. Edição limitada.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">2 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto03.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 24.999,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Placa Mãe Intel LGA 1700 Z690 DDR5 Wi-Fi Gigabyte AORUS XTREME WATERFORCE</h5>
+                        <p class="card-text truncar-3l">
+                            Refrigeração extrema para maior performance. Apenas 200 unidades produzidas no mundo todo.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-light disabled mt-2 d-block">
+                            <small>Reabastecendo Estoque</small>
+                        </a>
+                        <small class="text-danger">
+                            <b>Produto Esgotado</b>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto04.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 2.299,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Water Cooler Gigabyte AORUS WATERFORCE X 360</h5>
+                        <p class="card-text truncar-3l">
+                            Refrigeração extrema para maior performance. Tela LCD totalmente customizável.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">12 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto05.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 2.999,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">SSD M.2 Samsung 990 PRO 2TB Gen4 7450MBs/6900MBs</h5>
+                        <p class="card-text truncar-3l">
+                            Projetado para jogadores hardcore e usuários experientes em tecnologia.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">9 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto06.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 60.999,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Processador AMD Ryzen Threadripper PRO 5995WX 64 Cores e 128 Threads 2.7GHz (4.5GHz Turbo) Cache 288MB sWRX8</h5>
+                        <p class="card-text truncar-3l">
+                            Os núcleos mais rápidos do mundo para jogadores de PC.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">2 em estoque</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-3">
+        <hr class="mt-3">
+        <hr class="mt-3">
+
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <h4 class="flex-grow-1 text-white"><i class="bi-fire text-primary"></i>Mais vendidos</h4>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-1">
+
+        <div class="row g-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto07.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 19.799,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Placa de Vídeo NVIDIA GeForce RTX 4090 Galax HOF 24GB GDDR6X</h5>
+                        <p class="card-text truncar-3l">
+                            Mais de 20 recordes mundiais de Overclock quebrados.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">9 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto08.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 1.500,00
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Gabinete Gamer Lian Li O11 Dynamic EVO Black O11DEX</h5>
+                        <p class="card-text truncar-3l">
+                            Espaçoso, versátil, flexível. Perfeito para montar sua build custom.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">23 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto09.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 15.750,00
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Placa de Vídeo NVIDIA GeForce RTX 4090 MSI Suprim Liquid X 24GB GDDR6X</h5>
+                        <p class="card-text truncar-3l">
+                            Fria, silenciosa, potente. O modelo ideal para trabalhos pesados.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">6 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto10.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 15.499,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Placa Mãe Intel LGA 1700 Z790 DDR5 Wi-Fi MSI MEG Godlike</h5>
+                        <p class="card-text truncar-3l">
+                            Sinta-se como um Deus. Desenvolvida para usuários exigentes e que buscam o máximo de performance.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">5 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto11.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 3.299,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Memória RAM DDR5 Corsair Dominator Platinum RGB 32GB 2x16GB 6200MHz CL36</h5>
+                        <p class="card-text truncar-3l">
+                            Ultrapasse os limites do seu sistema como nunca antes com a memória DDR5, desbloqueando frequências ainda mais rápidas, maiores capacidades e melhor desempenho.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">12 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto12.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 3.999,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Gabinete Gamer Cooler Master Cosmos C700M RGB Full Tower Vidro Temperado</h5>
+                        <p class="card-text truncar-3l">
+                            Excelente opção para montar seu PC dos sonhos.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">7 em estoque</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-3">
+        <hr class="mt-3">
+        <hr class="mt-3">
+
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <h4 class="flex-grow-1 text-white"><i class="bi-lightning-charge-fill text-primary"></i>Lançamentos</h4>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-1">
+
+        <div class="row g-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto13.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 699,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Cooler FAN Lian Li Uni Fan AL120 Black RGB 120mm 3 unidades UF-AL120-3B Com controladora</h5>
+                        <p class="card-text truncar-3l">
+                            Com a tecnologia PIN-a-PIN, você pode conectar e controlar até 4 FANs com apenas um cabo.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">16 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto14.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 199,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Cooler FAN Lian Li Uni Fan AL120 Black RGB 120mm 1 unidade UF-AL120-1B Sem controladora</h5>
+                        <p class="card-text truncar-3l">
+                            Com a tecnologia PIN-a-PIN, você pode conectar e controlar até 4 FANs com apenas um cabo.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">13 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto15.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 2.599,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Placa Mãe AMD AM5 B650 DDR5 Asus TUF Gaming PLUS</h5>
+                        <p class="card-text truncar-3l">
+                            Certificação militar em resistência e durabilidade. Compatível com processadores AMD Ryzen 7000.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">15 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto16.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 2.599,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Processador AMD Ryzen 5 7600X 6 Cores e 12 Threads 4.7GHz (5.3GHz Turbo) Cache 38MB AM5</h5>
+                        <p class="card-text truncar-3l">
+                            Zen4, a arquitetura de processador mais avançada. Núcleos de alto desempenho. Eficiência energética líder do setor. Projetado para jogos e criação de conteúdo, os processadores Ryzen 5 7600X oferecem desempenho de nível entusiasta para jogadores e criadores.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">25 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto17.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 3.399,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Processador AMD Ryzen 7 7700X 8 Cores e 16 Threads 4.5GHz (5.4GHz Turbo) Cache 40MB AM5</h5>
+                        <p class="card-text truncar-3l">
+                            Zen4, a arquitetura de processador mais avançada. Núcleos de alto desempenho. Eficiência energética líder do setor. Projetado para jogos e criação de conteúdo, os processadores Ryzen 7 7700X oferecem desempenho de nível entusiasta para jogadores e criadores.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">17 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/produtos/produto18.png" alt="" class="card-img-top">
+                    <div class="card-header">
+                        R$ 4.999,99
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title truncar-3l">Processador AMD Ryzen 9 7900X 12 Cores e 24 Threads 4.7GHz (5.6GHz Turbo) Cache 76MB AM5</h5>
+                        <p class="card-text truncar-3l">
+                            Zen4, a arquitetura de processador mais avançada. Núcleos de alto desempenho. Eficiência energética líder do setor. Projetado para jogos e criação de conteúdo, os processadores Ryzen 9 7900X oferecem desempenho de nível entusiasta para jogadores e criadores.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a routerLink="" class="btn btn-primary mt-2 d-block">
+                            Adicionar ao Carrinho
+                        </a>
+                        <small class="text-success">14 em estoque</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-3">
+        <hr class="mt-3">
+        <hr class="mt-3">
+
+        <a href="https://wa.me" class="whatsapp" target="_blank" rel="external noopener" title="whatsapp"><i class="bi-whatsapp"></i></a>
+    </div>
+</main>

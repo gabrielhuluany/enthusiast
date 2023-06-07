@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-primary shadow-sm mb-3">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/"><img src="assets/img/logo/logo.png" alt="Enthusiast" width="" height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav flex-grow-1 justify-content-center">
+                <div id="searchbar">
+                <form class="mb-0 mb-md-0" role="search">
+                    <div class="input-group input-group-sm">
+                        <input type="search" class="form-control" id="searchinput" placeholder="O que está procurando?" value="">
+                        <button type="submit" class="btn btn-light" id="searchbutton" title="search"><i class="bi-search"></i></button>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="align-self-end">
+                <div class="navbar-nav">
+                    <div class="nav-item" id="user">
+                        <a routerLink="" onclick="mudarRota()" class="nav-link text-white"><i class="bi-person-circle"></i><span id="username"></span></a>
+                    </div>
+                    <div class="nav-item" id="cart">
+                        <a routerLink="" class="nav-link text-white"><i class="bi-cart3"></i><span class="badge rounded-pill bg-primary text-white position-absolute" id="cartnumber" title="0 produto(s) no carrinho"><small>0</small></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

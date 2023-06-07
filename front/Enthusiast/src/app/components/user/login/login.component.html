@@ -1,0 +1,60 @@
+<main class="flex-fill">
+    <div class="container">
+        <hr class="mt-5">
+        <hr class="mt-3">
+        <hr class="mt-3">
+
+        <div class="row">
+            <form class="me-5 col-lg-5 float-start text-white">
+                <h3>Login</h3>
+
+                <div class="form-floating mb-3 text-dark">
+                    <input type="text" id="txtUserLogin" class="form-control" placeholder="" autocomplete="off">
+                    <label for="txtUserLogin">Usuário</label>
+                </div>
+
+                <div class="form-floating mb-3 text-dark">
+                    <input type="password" id="txtSenhaLogin" class="form-control" placeholder="" autocomplete="off">
+                    <label for="txtSenhaLogin">Senha</label>
+                </div>
+
+                <button type="button" onclick="login()" class="btn btn-lg btn-primary">Entrar</button>
+                <hr class="mt-3">
+            </form>
+
+            <form class="col-lg-5 float-end text-white">
+                <h3>Ainda não tem conta?</h3>
+
+                <div class="form-floating mb-3 text-dark">
+                    <input type="text" id="txtNomeCadastro" class="form-control" placeholder="" autocomplete="off">
+                    <label for="txtNomeCadastro">Nome</label>
+                </div>
+
+                <div class="form-floating mb-3 text-dark">
+                    <input type="email" id="txtEmailCadastro" class="form-control" placeholder="" autocomplete="off">
+                    <label for="txtEmailCadastro">E-mail</label>
+                </div>
+
+                <div class="form-floating mb-3 text-dark">
+                    <input type="text" id="txtUserCadastro" class="form-control" placeholder="" autocomplete="off">
+                    <label for="txtUserCadastro">Usuário</label>
+                </div>
+
+                <div class="form-floating mb-3 text-dark">
+                    <input type="password" id="txtSenhaCadastro" class="form-control" placeholder="" autocomplete="off">
+                    <label for="txtSenhaCadastro">Senha</label>
+                </div>
+
+                <div class="form-floating mb-3 text-dark">
+                    <input type="password" id="txtConfirmarSenhaCadastro" class="form-control" placeholder="" autocomplete="off">
+                    <label for="txtConfirmarSenhaCadastro">Confirme a senha</label>
+                </div>
+
+                <button type="button" onclick="cadastrar()" class="btn btn-lg btn-primary">Cadastrar-me</button>
+                <hr class="mt-3">
+            </form>
+        </div>
+
+        <hr class="mt-1">
+    </div>
+</main>

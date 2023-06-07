@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "7bbd4b16-961c-4795-8266-b0829f8cc73e",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27772636",
+		"_collection_link": "https://grey-flare-431842.postman.co/workspace/My-Workspace~bc7f288b-b7f2-47c0-8fa3-20ec30344f72/collection/27532906-7bbd4b16-961c-4795-8266-b0829f8cc73e?action=share&creator=27772636&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"nome\": \"Placa de Vídeo NVIDIA GeForce RTX 4090 Founders Edition 24GB GDDR6X\",\r\n        \"descricao\": \"A GPU mais potente para games e compatível com DLSS 3. Versão original de fábrica.\",\r\n        \"preco\": 19499.99,\r\n        \"quantidade\": 7,\r\n        \"categoria\": \"Destaques\",\r\n        \"caminhoIMG\": \"assets/img/produtos/produto01.png\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProducts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProductByName",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Placa de Vídeo NVIDIA GeForce RTX 4090 Founders Edition 24GB GDDR6X\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product/del",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"del"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePreço",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Placa de Vídeo NVIDIA GeForce RTX 4090 Founders Edition 24GB GDDR6X\",\r\n    \"preco\": 17499.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product/attPreco",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"attPreco"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateQuantidade",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Placa de Vídeo NVIDIA GeForce RTX 4090 Founders Edition 24GB GDDR6X\",\r\n    \"quantidade\": \"11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product/attQuantidade",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"attQuantidade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCategoria",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Placa de Vídeo NVIDIA GeForce RTX 4090 Founders Edition 24GB GDDR6X\",\r\n    \"categoria\": \"Lançamento\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product/attCategoria",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"attCategoria"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

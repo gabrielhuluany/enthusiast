@@ -1,0 +1,58 @@
+<main class="flex-fill">
+    <div class="container">
+        <hr class="mt-5">
+        <hr class="mt-3">
+        <hr class="mt-3">
+
+        <h1 class="text-light">Minha conta</h1>
+        <div class="row gx-3">
+            <div class="col-4">
+                <div class="list-group">
+                    <a routerLink="/account_data" onclick="receberDados(); preencherDados()" class="list-group-item list-group-item-action bg-primary text-light" id="auto_trigger">
+                        <i class="bi-person fs-6"></i> Dados pessoais
+                    </a>
+                    <a routerLink="" class="list-group-item list-group-item-action">
+                        <i class="bi-house-door fs-6"></i> Endereço
+                    </a>
+                    <a routerLink="" class="list-group-item list-group-item-action">
+                        <i class="bi-bag fs-6"></i> Pedidos
+                    </a>
+                    <a routerLink="/account_password" class="list-group-item list-group-item-action">
+                        <i class="bi-lock fs-6"></i> Alterar senha
+                    </a>
+                    <a routerLink="/account_logout" class="list-group-item list-group-item-action">
+                        <i class="bi-door-open fs-6"></i> Sair
+                    </a>
+                </div>
+            </div>
+            <div class="col-8">
+                <form class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="form-floating mb-3">
+                      <input type="text" id="txtUserDados" class="form-control" placeholder="" readonly autocomplete="off">
+                      <label for="txtUserDados">Usuário</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" id="txtNomeDados" class="form-control" placeholder="" readonly autocomplete="off">
+                        <label for="txtNomeDados">Nome</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <input type="email" id="txtEmailDados" class="form-control" placeholder="" readonly autocomplete="off">
+                      <label for="txtEmailDados">E-mail</label>
+                    </div>
+
+                    <hr class="mt-3">
+
+                    <div class="float-end">
+                      <form class="col-sm-12 text-white">
+                          <button type="button" onclick="excluirConta()" class="btn btn-lg btn-danger">Excluir conta</button>
+                      </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <hr class="mt-3">
+    </div>
+</main>
