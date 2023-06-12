@@ -93,4 +93,4 @@ Execute as consultas do arquivo `MySQL Query.sql` no MySQL Workbench ou MySQL Co
 
 Execute o projeto e aguarde a mensagem de sucesso do Spring. Em caso positivo, confirme se houve sucesso na criação das tabelas e colunas no Banco de Dados.
 
-Você pode consumir nossa API utilizando nosso projeto angular ou utilizando programas como o Postman e o Insomnia, o que for de sua preferência. Temos algumas requisições JSON prontas disponíveis em: [User](https://github.com/gabrielhuluany/enthusiast/back/User.postman_collection.json) e [Product](https://github.com/gabrielhuluany/enthusiast/back/Product.postman_collection.json).
+Você pode consumir nossa API utilizando nosso projeto angular ou utilizando programas como o Postman e o Insomnia, o que for de sua preferência. Temos algumas requisições JSON prontas disponíveis em: [User](https://github.com/gabrielhuluany/enthusiast/blob/main/back/User.postman_collection.json) e [Product](https://github.com/gabrielhuluany/enthusiast/blob/main/back/Product.postman_collection.json).
